@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>Levantamento da Associação Brasileira de Energia Solar Fotovoltaica</title>  
+    </head>
+    <nav><ul>
+        <li class="active">
+          <button class="animated-button" onclick="callLink1()">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">ORIGEM</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button></a>
+      </li>
+      <li>
+        <button class="animated-button" onclick="callLink2()">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">LEVANTAMENTO</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>                    
+            </button></a>
+      </li>
+      <li>
+        <button class="animated-button" onclick="callLink3()">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">MERCADO DE ENERGIA SOLAR</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>                    
+          </button></a>
+      </li>
+      <li>
+        <button class="animated-button" onclick="callLink4()">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">HOME</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>                    
+          </button></a>
+      </li>
+     
+  </ul></nav>
+  <style>
+  title {
+      font-size: 30;
+   }
+   body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 211, 211);
+    font-size: 20px;
+    overflow-x: hidden; 
+    text-align: justify;
+}
+    
+    nav {
+    background-color: #161616;
+    color: #181e2c;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+    .animated-button {
+    
+position: relative;
+display: flex;
+gap: 4px;
+padding: 16px 36px;
+border: 4px solid;
+border-color: transparent;
+font-size: 16px;
+background-color: inherit;
+border-radius: 100px;
+font-weight: 600;
+color: rgb(0, 247, 255);;
+box-shadow: 0 0 0 2px rgb(255, 255, 255);
+cursor: pointer;
+overflow: hidden;
+transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+position: absolute;
+width: 24px;
+fill:  rgb(0, 247, 255);;
+z-index: 9;
+transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+right: 16px;
+}
+
+.animated-button .arr-2 {
+left: -25%;
+}
+
+.animated-button .circle {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 20px;
+height: 20px;
+background-color:  rgb(0, 247, 255);;
+border-radius: 50%;
+opacity: 0;
+transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+position: relative;
+z-index: 1;
+transform: translateX(-12px);
+transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+box-shadow: 0 0 0 12px transparent;
+color: #212121;
+border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+left: 16px;
+}
+
+.animated-button:hover .text {
+transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+fill: #212121;
+}
+
+.animated-button:active {
+scale: 0.95;
+box-shadow: 0 0 0 4px rgb(0, 247, 255);
+}
+
+.animated-button:hover .circle {
+width: 220px;
+height: 220px;
+opacity: 1;
+}
+nav ul{
+margin: 0;
+padding: 30;
+list-style: none;
+display: flex;
+gap: 50px;
+}
+.solar-text {
+  margin: 90px auto 20px auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20;
+}
+.text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 80px; 
+    padding: 20px;
+}
+#FuncionamentoDePlacaSolar{
+                    max-height: 543px;
+                    width: 552px;
+            }
+</style>
+    
+    <body> 
+      <div class="grid">
+          <div class="item">
+            <p><strong>Levantamento da Associação Brasileira de Energia Solar Fotovoltaica</strong></p>
+            <p>O Brasil acaba de ultrapassar a marca de 35 gigawatts (GW) de potência instalada da fonte solar fotovoltaica, somando as usinas de grande porte e os sistemas de geração própria de energia em telhados, fachadas e pequenos terrenos, o equivalente a 15,9% da capacidade instalada da matriz elétrica do país, informou a Associação Brasileira de Energia Solar Fotovoltaica (Absolar).</p>
+            <p>Em termos de geração de energia, a fonte solar corresponde a cerca de 11% do total, superada pela geração eólica (15%) e hidrelétricas (64%).</p>
+            <p>De acordo com a Absolar, desde 2012 a fonte solar já trouxe ao Brasil mais de R$ 170 bilhões em novos investimentos, mais de R$ 47,9 bilhões em arrecadação aos cofres públicos e gerou mais de 1 milhão de empregos acumulados. Com isso, também evitou a emissão de 42,8 milhões de toneladas de CO2 na geração de eletricidade.</p>
+            <p>Para o presidente do Conselho de Administração da Absolar, Ronaldo Koloszuk, o crescimento da energia solar fortalece a sustentabilidade, alivia o orçamento das famílias e amplia a competitividade dos setores produtivos brasileiros.</p>
+            <p>Finalmente, o Brasil acordou para a energia solar e seus benefícios. Aproveitar uma fonte de energia limpa e barata ajuda no processo de transição energética do país, além de estimular a diversificação do suprimento de eletricidade, reduzindo a pressão sobre os recursos hídricos e o risco de ainda mais aumentos na conta de luz da população”, disse Koloszuk em nota.</p>
+            <p>Segundo Rodrigo Sauaia, presidente da Absolar, a fonte solar é uma alavanca para o desenvolvimento social, econômico e ambiental do país, em especial com a oportunidade de uso da tecnologia na habitação de interesse social, como casas populares do programa Minha Casa Minha Vida, bem como em escolas, hospitais, postos de saúde, delegacias, bibliotecas, museus, parques etc.</p>
+            <p>“Além também de contribuir no processo de descarbonização da Amazônia com utilização conjunta de baterias, o crescimento da fonte solar pode acelerar ainda mais a atração de investimentos, a geração de empregos e renda e a liderança internacional do Brasil na transição energética”, avaliou Sauaia.</p>
+            <p><strong>Números</strong></p>
+            <p>No segmento de geração distribuída (GD) de energia, o Brasil tem 24,4 GW de potência instalada da fonte solar. Isso equivale a cerca de R$ 122,5 bilhões em investimentos, R$ 31,2 bilhões em arrecadação e mais de 730,8 mil empregos acumulados desde 2012, espalhados pelas cinco regiões do Brasil. A tecnologia solar é utilizada atualmente em 99,9% de todas as conexões de geração distribuída no país, liderando com folga o segmento.</p>
+            <p>O Brasil possui ainda cerca de 10,6 GW de potência instalada em usinas solares de grande porte (centralizadas).</p>
+            <p>Desde 2012, as grandes usinas solares já trouxeram ao país cerca de R$ 47,6 bilhões em novos investimentos e mais de 318,8 mil empregos acumulados, além de proporcionarem uma arrecadação aos cofres públicos que supera R$ 16,7 bilhões.</p>
+            <p>Para mais informações sobre o assunto, só clicar no link abaixo:</p>
+                <a href="https://www.cnnbrasil.com.br/economia/brasil-alcanca-quase-16-da-capacidade-instalada-de-energia-solar/#:~:text=Isso%20equivale%20a%20cerca%20de,liderando%20com%20folga%20o%20segmento">https://www.cnnbrasil.com.br/economia/brasil-alcanca-quase-16-da-capacidade-instalada-de-energia-solar/#:~:text=Isso%20equivale%20a%20cerca%20de,liderando%20com%20folga%20o%20segmento</a>
+              </div>
+              <div class="item">
+                <img id="FuncionamentoDePlacaSolar" src="pexels-pixabay-356049.jpg" width="300" height="400">
+                <img id="FuncionamentoDePlacaSolar" src="pexels-pixabay-356036.jpg"width="300" height="400">
+              </div>  
+            </div> 
+                    <script src="MeuJava.js"></script>
+                </body>
+                
+                </html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>APS</title> 
+        <nav><ul>
+          <li class="active">
+            <button class="animated-button" onclick="callLink1()">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">ORIGEM</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button></a>
+        </li>
+        <li>
+          <button class="animated-button" onclick="callLink2()">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">LEVANTAMENTO</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>                    
+              </button></a>
+        </li>
+        <li>
+          <button class="animated-button" onclick="callLink3()">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">MERCADO DE ENERGIA SOLAR</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>                    
+            </button></a>
+        </li>
+        <li>
+          <button class="animated-button" onclick="callLink4()">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">HOME</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>                    
+            </button></a>
+        </li>
+       
+    </ul></nav>
+    <style>
+      title {
+         font-size: 30;
+      }
+      body {
+        font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            text-align: justify;
+            background-color: rgb(211, 211, 211);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+       
+nav {
+    background-color: #161616;
+    color: #181e2c;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+       .animated-button {
+       
+   position: relative;
+   display: flex;
+   gap: 4px;
+   padding: 16px 36px;
+   border: 4px solid;
+   border-color: transparent;
+   font-size: 16px;
+   background-color: inherit;
+   border-radius: 100px;
+   font-weight: 600;
+   color: rgb(0, 247, 255);;
+   box-shadow: 0 0 0 2px rgb(255, 255, 255);
+   cursor: pointer;
+   overflow: hidden;
+   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button svg {
+   position: absolute;
+   width: 24px;
+   fill:  rgb(0, 247, 255);;
+   z-index: 9;
+   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button .arr-1 {
+   right: 16px;
+   }
+   
+   .animated-button .arr-2 {
+   left: -25%;
+   }
+   
+   .animated-button .circle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 20px;
+   height: 20px;
+   background-color:  rgb(0, 247, 255);;
+   border-radius: 50%;
+   opacity: 0;
+   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button .text {
+   position: relative;
+   z-index: 1;
+   transform: translateX(-12px);
+   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button:hover {
+   box-shadow: 0 0 0 12px transparent;
+   color: #212121;
+   border-radius: 12px;
+   }
+   
+   .animated-button:hover .arr-1 {
+   right: -25%;
+   }
+   
+   .animated-button:hover .arr-2 {
+   left: 16px;
+   }
+   
+   .animated-button:hover .text {
+   transform: translateX(12px);
+   }
+   
+   .animated-button:hover svg {
+   fill: #212121;
+   }
+   
+   .animated-button:active {
+   scale: 0.95;
+   box-shadow: 0 0 0 4px rgb(0, 247, 255);
+   }
+   
+   .animated-button:hover .circle {
+   width: 220px;
+   height: 220px;
+   opacity: 1;
+   }
+   nav ul{
+   margin: 0;
+   padding: 30;
+   list-style: none;
+   display: flex;
+   gap: 50px;
+   }
+   .solar-text {
+     margin: 90px auto 20px auto;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20;
+   }
+   .text {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20;
+   }
+   .container {
+    display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 35px; 
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        .text-column{
+            grid-column: 1; 
+            width: 700px;
+        }
+
+        .images {
+            grid-column: 2; 
+            
+        }
+        
+            #FuncionamentoDePlacaSolar{
+                    max-height: 543px;
+                    width: 552px;
+            }
+    </style>
+    </head>
+    
+    <body>
+      <div class="container">
+        <div class="text-column">
+          <p class="title"><strong>A origem da energia solar: O Sol</strong></p>
+          <p>A origem da energia solar remete-se ao surgimento do Sol, há bilhões de anos, atualmente responsável por atuar como fonte de energia em diversos processos, principalmente na geração de energia solar fotovoltaica, no aquecimento de água pela energia termossolar e em usinas e parques solares.</p>
+          <p>O Sol teve seu surgimento há cerca de 4,6 bilhões de anos, como a maior estrela do Sistema Solar, sendo responsável por fenômenos meteorológicos, alterações climáticas e pela fotossíntese, processo do qual todos os seres vivos são dependentes. Sua composição é de 74% hidrogênio e 24% hélio, com a taxa restante formada por oxigênio, carbono e ferro.</p>
+          <p class="title"><strong>Qual é a origem da energia solar fotovoltaica?</strong></p>
+          <p>De forma resumida, a origem da energia solar deu-se em 1839, após a pesquisa do físico francês Alexandre Edmond Becquerel, que descobriu o efeito fotovoltaico, e com a criação da primeira célula fotovoltaica em 1883, por Charles Fritts.</p>
+          <p>Após uma série de acontecimentos inclusive um prêmio Nobel para Einstein, deu-se início à era moderna da energia solar, em 1954, após a elaboração do processo de dopagem de silício por Calvin Fuller e a criação da célula solar moderna por Russell Shoemaker Ohl.</p>
+          <p class="title"><strong>Quando surgiu a energia solar?</strong></p>
+          <p>A energia solar, próxima ao que conhecemos hoje, surgiu em 1954 por Russell Shoemaker Ohl, junto ao anúncio da primeira célula fotovoltaica durante uma reunião da National Academy of Sciences, após a descoberta do efeito fotovoltaico e dando início à utilização dos painéis solares em 1958.</p>
+          <p>Russell Ohl foi quem inventou a primeira placa de silício e também foi o primeiro a patentear o sistema fotovoltaico moderno, mais ou menos como conhecemos hoje. No entanto, seu êxito só foi possível graças ao trabalho de Calvin Fuller, Gerald Pearson e Daryl Chapin, cientistas do laboratório Bell Labs. </p>
+          <p>Fuller foi o químico que desenvolveu, pela primeira vez, o processo de dopagem do silício. Pearson, então, estabilizou as placas de silício a partir de reações químicas produzidas pelo contato de uma junção P-N ou diodo com as placas mergulhadas em lítio, podendo observar um comportamento fotovoltaico nas placas analisadas.</p>
+          <p>Nesse mesmo momento, Chapin procurava uma fonte de energia alternativa para as baterias usadas em redes telefônicas remotas. Fuller e Pearson entraram em contato com o físico e, em 1955, células de silício foram usadas pela primeira vez como fonte de alimentação de uma rede telefônica na Geórgia, um estado dos Estados Unidos.</p>
+          <p class="title"><strong>A história da energia solar fotovoltaica</strong></p>
+          <p>A evolução da energia solar fotovoltaica teve início a partir da pesquisa de um físico francês, Alexandre Edmond Becquerel, em 1839, que iniciou seus estudos sobre o efeito fotovoltaico.</p>
+          <p>Além disso, Charles Fritts, um inventor de Nova York, originou a primeira célula fotovoltaica produzida por selênio revestido de ouro. Este marco da tecnologia fotovoltaica data o ano de 1883, quando foi possível gerar uma corrente contínua e constante para a conversão elétrica máxima de 1% (enquanto, atualmente, trabalha-se com 20% de eficiência). </p>
+          <p>Mais adiante, os cientistas do Bell Laboratories foram os pioneiros na fabricação de células de silício que possuíam 6% de conversão, sendo mais eficientes que as anteriores.</p>
+          <p>Uma das primeiras utilizações de painéis solares ocorreu em 1958 no espaço, quando o satélite Vanguard I foi lançado, com o auxílio de um painel de 1 W para alimentar seu rádio na viagem. Além disso, foram construídas as primeiras instalações solares para casas, estabelecimentos e até mesmo para meios de transportes, como ônibus, navio e avião.</p>
+          <p>Para mais informações sobre o assunto, só clicar no link abaixo:</p>
+              <a href="https://www.portalsolar.com.br/historia-e-origem-da-energia-solar#:~:text=A%20origem%20da%20energia%20solar%20remete%2Dse%20ao%20surgimento%20do,em%20usinas%20e%20parques%20solares.">https://www.portalsolar.com.br/historia-e-origem-da-energia-solar#:~:text=A%20origem%20da%20energia%20solar%20remete%2Dse%20ao%20surgimento%20do,em%20usinas%20e%20parques%20solares.</a>
+      </div>
+      <div class="images">
+        <img id="FuncionamentoDePlacaSolar" src="andreas-gucklhorn-Ilpf2eUPpUE-unsplash.jpg" width="300" height="400">
+        <img id="FuncionamentoDePlacaSolar" src="andres-siimon-fCv4k5aAZf4-unsplash.jpg" width="300" height="400">
+      </div>  
+    </div> 
+            <script src="MeuJava.js"></script>
+        </body>
+        
+        </html>

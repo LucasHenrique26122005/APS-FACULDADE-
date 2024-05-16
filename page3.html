@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial">
+    <title>APS</title>
+    <nav><ul>
+      <li class="active">
+        <button class="animated-button" onclick="callLink1()">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">ORIGEM</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button></a>
+    </li>
+    <li>
+      <button class="animated-button" onclick="callLink2()">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">LEVANTAMENTO</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>                    
+          </button></a>
+    </li>
+    <li>
+      <button class="animated-button" onclick="callLink3()">
+          <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+          <span class="text">MERCADO DE ENERGIA SOLAR</span>
+          <span class="circle"></span>
+          <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>                    
+        </button></a>
+    </li>
+    <li>
+      <button class="animated-button" onclick="callLink4()">
+          <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+          <span class="text">HOME</span>
+          <span class="circle"></span>
+          <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>                    
+        </button></a>
+    </li>
+   
+</ul></nav>
+<style>
+  title {
+      font-size: 30;
+   }
+   body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 211, 211);
+    font-size: 20px;
+    overflow-x: hidden; 
+    text-align: justify;
+}
+    
+    nav {
+    background-color: #161616;
+    color: #181e2c;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+  .animated-button {
+  
+position: relative;
+display: flex;
+gap: 4px;
+padding: 16px 36px;
+border: 4px solid;
+border-color: transparent;
+font-size: 16px;
+background-color: inherit;
+border-radius: 100px;
+font-weight: 600;
+color: rgb(0, 247, 255);;
+box-shadow: 0 0 0 2px rgb(255, 255, 255);
+cursor: pointer;
+overflow: hidden;
+transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+position: absolute;
+width: 24px;
+fill:  rgb(0, 247, 255);;
+z-index: 9;
+transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+right: 16px;
+}
+
+.animated-button .arr-2 {
+left: -25%;
+}
+
+.animated-button .circle {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 20px;
+height: 20px;
+background-color:  rgb(0, 247, 255);;
+border-radius: 50%;
+opacity: 0;
+transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+position: relative;
+z-index: 1;
+transform: translateX(-12px);
+transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+box-shadow: 0 0 0 12px transparent;
+color: #212121;
+border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+left: 16px;
+}
+
+.animated-button:hover .text {
+transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+fill: #212121;
+}
+
+.animated-button:active {
+scale: 0.95;
+box-shadow: 0 0 0 4px rgb(0, 247, 255);
+}
+
+.animated-button:hover .circle {
+width: 220px;
+height: 220px;
+opacity: 1;
+}
+nav ul{
+margin: 0;
+padding: 30;
+list-style: none;
+display: flex;
+gap: 50px;
+}
+.solar-text {
+margin: 90px auto 20px auto;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20;
+}
+.text {
+font-family: 'Times New Roman', Times, serif;
+font-size: 20;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 80px; 
+    padding: 20px;
+}
+</style> 
+   <body>
+            <div class="grid">
+                <div class="item">
+                <p class="title"><strong>Dados do mercado de energia solar no Brasil</strong></p>
+                  <p>Recebendo milhares de pedidos de orçamento em todo o Brasil e possuindo diversas unidades espalhadas pelo Brasil, o Portal Solar mapeou o perfil do mercado de energia solar.</p>
+                  <p>Com mais de 41,1 GW de capacidade instalada, a solar fotovoltaica é a segunda principal fonte do País, respondendo por mais de 15% da matriz elétrica brasileira. Conforme os dados da Associação Brasileira de Energia Solar Fotovoltaica (Absolar), esse potência é dívida em 12,8 GW de geração centralizada, segmento composto por grandes usinas, e 28,3 GW de geração distribuída, formado por sistemas residenciais e comerciais de menor porte.</p>
+                  <p class="title"><strong>Criação do mercado de energia solar no Brasil</strong></p>
+                  <p>O mercado de energia solar distribuída começou de fato aqui no Brasil apenas no ano de 2012. Muito embora alguns consumidores já utilizassem essa tecnologia, a sua regulamentação só foi feita a partir da Resolução Normativa 482 de 2012. Ela foi a responsável por criar as regras da geração distribuída e é considerada como um marco legal da energia solar.</p>
+                  <p>A partir dessa resolução, a geração da energia solar passou a tornar-se viável para os brasileiros, que desde então podem conectar o sistema à rede de distribuição e gerar créditos solares a partir do excedente de energia. Esses créditos são compensados e reduzem o valor das tarifas de energia elétrica em até 90%.</p>
+                  <p>Já o segmento de geração centralizada começou a funcionar no país em 2014, com o primeiro leilão que incluiu usinas de energia solar. Dado o tempo para a construção das usinas, a geração centralizada começou a operar em 2017.</p>
+                  <p>Na geração solar distribuída, os painéis solares são instalados na própria unidade consumidora ou em pontos próximos. Na centralizada, grandes usinas produzem a energia, que é enviada aos centros urbanos por redes de transmissão e entregue aos consumidores por meio das distribuidoras de energia.</p>
+                  <p class="title"><strong>O mercado de energia solar no Brasil em 2022 </strong></p>
+                  <p>O Brasil adicionou 9.3 GW em energia solar fotovoltaica em 2022, mostram dados da Agência Nacional de Energia Elétrica (Aneel). Com o acréscimo, a capacidade operacional da fonte superou 23 GW no País, registrando um avanço de quase 66% no período.</p>
+                  <p>Por ser um país com altos índices de irradiação solar, podemos dispor de um bom desempenho dos sistemas fotovoltaicos a partir dos fatores climáticos, uma vez que sua eficiência em determinadas regiões pode ser muito mais satisfatória por meio da captação dos raios solares.</p>
+                  <p>Além disso, outros aspectos contribuíram para a maior utilização de energia fotovoltaica no Brasil, como, por exemplo, as linhas de financiamento de energia solar, com prazos de pagamento prolongados e juros mais baixos, além da diminuição do custo para aquisição de painéis solares.</p>
+                  <p class="title"><strong>Crescimento esperado em 2023</strong></p>
+                  <p>Conforme a Absolar, o Brasil deverá acrescentar mais de 10 GW de geração solar fotovoltaica em 2023 e atingir a capacidade instalada acumulada de 41,1 GW na fonte. O desempenho representaria um crescimento de 52% em relação a potência atual e o melhor ano da história do setor no País.</p>
+                  <p>Conforme a entidade, desse total, 21,6 GW serão provenientes de pequenos e médios sistemas de geração própria (geração distribuída), enquanto 41.094 GW estarão em grandes usinas solares (geração centralizada).</p>
+                  <p class="title"><strong>O que leva ao crescimento acelerado do mercado de energia solar?</strong></p>
+                  <p>O crescimento do mercado de energia solar é motivado por diversos fatores, mas principalmente pelos altos preços da energia elétrica no Brasil e os constantes aumentos na conta de luz. </p>
+                  <p>Outros fatores incluem a queda de preços dos sistemas fotovoltaicos, as linhas de financiamento facilitadas, as condições climáticas favoráveis no país, o baixo custo de manutenção do sistema fotovoltaico e o fator da sustentabilidade.</p>
+                  <p class="title"><strong>Inflação Energética</strong></p>
+                  <p>A inflação energética é, de longe, o maior impulsor da energia solar no Brasil no segmento de geração distribuída. Entre os causadores dos aumentos consecutivos nas faturas de energia elétrica, estão empréstimos e subsídios feitos ao setor elétrico, que são repassados para os consumidores.</p>
+                  <p>Um exemplo ocorreu na pandemia, que gerou o empréstimo Conta-Covid – pago pelos consumidores de maneira indireta. Esse empréstimo de mais de 15 bilhões de reais foi realizado pelas distribuidoras no ano de 2020 para que fosse realizado o pagamento da energia das geradoras quando o consumo foi reduzido drasticamente por conta da pandemia.</p>
+                  <p>Além disso, em 2021 o Brasil passou a um crise hídrica, que também faz com que o preço da conta ficasse mais caro. Esse tipo de cenário acelera a busca por fontes alternativas para a matriz elétrica do país, incluindo aqui a energia solar, o que deve impulsionar ainda mais o mercado de geração centralizada. </p>
+                  <p>Por essas razões sistêmicas, a tendência de encarecimento na conta de luz é constante no Brasil, tornando os geradores solares uma alternativa cada vez mais econômica para os consumidores.</p>
+                  <p>Para mais informações sobre o assunto, só clicar no link abaixo:</p>
+                <a href="https://www.portalsolar.com.br/mercado-de-energia-solar-no-brasil.html">https://www.portalsolar.com.br/mercado-de-energia-solar-no-brasil.html</a>
+              </div>
+              <div class="item">
+                <img id="FuncionamentoDePlacaSolar" src="moritz-kindler-gD8IO0E4OZM-unsplash.jpg" width="300" height="400">
+                <img id="FuncionamentoDePlacaSolar" src="american-public-power-association-513dBrMJ_5w-unsplash.jpg" width="400" height="400">
+              </div>  
+            </div> 
+                    <script src="MeuJava.js"></script>
+                </body>
+                
+                </html>

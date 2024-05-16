@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial">
+        <title>APS</title> 
+        <nav><ul>
+          <li class="active">
+            <button class="animated-button" onclick="callLink1()">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">ORIGEM</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button></a>
+        </li>
+        <li>
+          <button class="animated-button" onclick="callLink2()">
+                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">LEVANTAMENTO</span>
+                <span class="circle"></span>
+                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>                    
+              </button></a>
+        </li>
+        <li>
+          <button class="animated-button" onclick="callLink3()">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">MERCADO DE ENERGIA SOLAR</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>                    
+            </button></a>
+        </li>
+        <li>
+          <button class="animated-button" onclick="callLink4()">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">HOME</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>                    
+            </button></a>
+        </li>
+       
+    </ul></nav>
+    <style>
+      title {
+         font-size: 30;
+      }
+      body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(211, 211, 211);
+    font-size: 20px;
+    overflow-x: hidden; 
+    text-align: justify;
+}
+       
+nav {
+    background-color: #161616;
+    color: #181e2c;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+       .animated-button {
+       
+   position: relative;
+   display: flex;
+   gap: 4px;
+   padding: 16px 36px;
+   border: 4px solid;
+   border-color: transparent;
+   font-size: 16px;
+   background-color: inherit;
+   border-radius: 100px;
+   font-weight: 600;
+   color: rgb(0, 247, 255);;
+   box-shadow: 0 0 0 2px rgb(255, 255, 255);
+   cursor: pointer;
+   overflow: hidden;
+   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button svg {
+   position: absolute;
+   width: 24px;
+   fill:  rgb(0, 247, 255);;
+   z-index: 9;
+   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button .arr-1 {
+   right: 16px;
+   }
+   
+   .animated-button .arr-2 {
+   left: -25%;
+   }
+   
+   .animated-button .circle {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 20px;
+   height: 20px;
+   background-color:  rgb(0, 247, 255);;
+   border-radius: 50%;
+   opacity: 0;
+   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button .text {
+   position: relative;
+   z-index: 1;
+   transform: translateX(-12px);
+   transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+   }
+   
+   .animated-button:hover {
+   box-shadow: 0 0 0 12px transparent;
+   color: #212121;
+   border-radius: 12px;
+   }
+   
+   .animated-button:hover .arr-1 {
+   right: -25%;
+   }
+   
+   .animated-button:hover .arr-2 {
+   left: 16px;
+   }
+   
+   .animated-button:hover .text {
+   transform: translateX(12px);
+   }
+   
+   .animated-button:hover svg {
+   fill: #212121;
+   }
+   
+   .animated-button:active {
+   scale: 0.95;
+   box-shadow: 0 0 0 4px rgb(0, 247, 255);
+   }
+   
+   .animated-button:hover .circle {
+   width: 220px;
+   height: 220px;
+   opacity: 1;
+   }
+   nav ul{
+   margin: 0;
+   padding: 30;
+   list-style: none;
+   display: flex;
+   gap: 50px;
+   }
+   .solar-text {
+     margin: 90px auto 20px auto;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20;
+   }
+   .text {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20;
+   }
+   .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 80px; 
+    padding: 20px;
+}
+
+            #FuncionamentoDePlacaSolar{
+                    max-height: 543px;
+                    width: 552px;
+            }
+    </style>
+    </head>
+    
+    <body>
+      <div class="grid">
+        <div class="item">
+            <p class="title"><strong>Energia Solar</strong></p>
+            <p>Energia solar é um termo que se refere à energia proveniente da luz e do calor do Sol. É utilizada por meio de diferentes tecnologias em constante evolução, como o aquecimento solar, a energia solar fotovoltaica, a energia heliotérmica, a arquitetura solar e a fotossíntese artificial.[1] Tecnologias solares são amplamente caracterizadas como ativas ou passivas, dependendo da forma como capturam, convertem e distribuem a energia solar. Entre as técnicas solares ativas estão o uso de painéis fotovoltaicos, concentradores solares térmicos das usinas heliotérmicas e os aquecedores solares. Entre as técnicas solares passivas estão a orientação de um edifício para o Sol, a seleção de materiais com massa térmica favorável ou propriedades translúcidas e projetar espaços que façam o ar circular naturalmente.</p>
+            <p>Na geração fotovoltaica, a energia luminosa é convertida diretamente em energia elétrica. Nas usinas heliotérmicas, a produção de eletricidade acontece em dois passos: primeiro, os raios solares concentrados aquecem um receptor e, depois, este calor (350 °C - 1 000 °C) é usado para iniciar o processo convencional da geração de energia elétrica por meio da movimentação de uma turbina. No aquecimento solar, a luz do Sol é utilizada para aquecer a água de casas e prédios (≈80 °C), o objetivo aqui não sendo a geração de energia elétrica.</p>
+            <p>No seu movimento de translação ao redor do Sol, a Terra recebe 1 410 W/m² de energia, medição feita numa superfície normal (em ângulo reto) com o Sol. Disso, aproximadamente 19% é absorvido pela atmosfera e 35% é reflectido pelas nuvens. Ao passar pela atmosfera terrestre, a maior parte da energia solar está na forma de luz visível e luz ultravioleta. As plantas utilizam diretamente essa energia no processo de fotossíntese. Nós usamos essa energia quando queimamos lenha ou combustíveis minerais. Existem técnicas experimentais para criar combustível a partir da absorção da luz solar em uma reação química de modo similar à fotossíntese vegetal — mas sem a presença destes organismos. A radiação solar, juntamente com outros recursos secundários de alimentação, tal como a energia eólica e das ondas, hidro-electricidade e biomassa, são responsáveis por grande parte da energia renovável disponível na Terra. Apenas uma minúscula fracção da energia solar disponível é utilizada.</p>
+            <p>Em 2011, a Agência Internacional de Energia disse que "o desenvolvimento de tecnologias de fontes de energia solar acessíveis, inesgotáveis ​​e limpas terá enormes benefícios a longo prazo. Ele vai aumentar a segurança energética dos países através da dependência de um recurso endógeno, inesgotável e, principalmente, independente de importação, o que aumentará a sustentabilidade energética, reduzirá a poluição, reduzirá os custos de mitigação das mudanças climáticas e manterá os preços dos combustíveis fósseis mais baixos. Estas vantagens são globais. Sendo assim, entre os custos adicionais dos incentivos para a implantação precoce dessa tecnologia devem ser considerados investimentos em aprendizagem; que deve ser gasto com sabedoria e precisam ser amplamente compartilhados".</p>
+            <p class="title"><strong>Potencial</strong></p>
+            <p>A Terra recebe 174 petawatts (GT) de radiação solar (insolação) na zona superior da atmosfera. Dessa radiação, cerca de 30% é reflectida para o espaço, enquanto o restante é absorvido pelas nuvens, mares e massas terrestres. O espectro da luz solar na superfície da Terra é mais difundida em toda a gama visível e infravermelho e uma pequena gama de radiação ultravioleta.</p>
+            <p>A superfície terrestre, os oceanos e atmosfera absorvem a radiação solar, e isso aumenta sua temperatura. O ar quente que contém a água evaporada dos oceanos sobe, provocando a circulação e convecção atmosférica. Quando o ar atinge uma altitude elevada, onde a temperatura é baixa, o vapor de água condensa-se, formando nuvens, que posteriormente provocam precipitação sobre a superfície da Terra, completando o ciclo da água. O calor latente de condensação de água aumenta a convecção, produzindo fenómenos atmosféricos, como o vento, ciclones e anticiclones. A luz solar absorvida pelos oceanos e as massas de terra mantém a superfície a uma temperatura média de 14 °C. A fotossíntese das plantas verdes converte a energia solar em energia química, que produz alimentos, madeira e biomassa a partir do qual os combustíveis fósseis são derivados.</p>
+            <p>A energia solar pode ser aproveitado em diferentes níveis em todo o mundo. Consoante a localização geográfica, quanto mais perto do equador, mais radiação solar pode ser potencialmente captada para produção de energia solar. As áreas de deserto, onde as nuvens são baixas e estão localizadas em latitudes próximas ao equador são mais favoráveis à captação energia solar. Os desertos que se encontram relativamente perto de áreas de maior consumo energético em países desenvolvidos, que têm a sofisticação técnica necessária, são usados para a captura de energia solar. Realizações cada vez mais importantes como o Deserto de Mojave (Califórnia), onde existe uma usina termossolar com uma capacidade total de 354 MW.</p>
+            <p>O total de energia solar absorvida pela atmosfera terrestre, oceanos e as massas de terra é de aproximadamente 3 850 000 exajoules (EJ) por ano. Em 2002, isto equivalia a mais energia em uma hora do que a humanidade usa em um ano. A fotossíntese capta cerca de 3,000 EJ por ano em biomassa. A quantidade de energia solar que atinge a superfície do planeta é tão grande que, em um ano, é o mesmo que cerca de duas vezes o que seria obtido a partir de todos os recursos não-renováveis da Terra combinados, como carvão, petróleo, gás natural e urânio.</p>
+            <p>Além disso, a disponibilidade de terra tem um grande efeito sobre a energia solar disponível, porque os painéis solares só podem ser instalados em áreas que não têm dono e que sejam adequadas para este tipo de equipamento. Telhados são geralmente considerados um lugar adequado para células solares, sendo que muitas pessoas descobriram que elas podem coletar energia diretamente através de suas casas desta forma.</p>
+            <p>Técnicas solares ativas usam energia fotovoltaica, energia solar concentrada, coletores solares térmicos, bombas e ventiladores para converter a luz solar em resultados úteis. As técnicas solares passivas incluem a seleção de materiais com propriedades térmicas favoráveis, projetando espaços por onde o ar circula naturalmente e referenciando a posição de um edifício em relação ao Sol. As tecnologias solares ativas aumentam a oferta de energia, enquanto as tecnologias solares passivas reduzem a necessidade de recursos alternativos.</p>
+            <p>Em 2000, o Programa das Nações Unidas para o Desenvolvimento, o Departamento de Assuntos Econômicos e Sociais das Nações Unidas e o Conselho Mundial de Energia publicaram uma estimativa da energia solar potencial que poderia ser usada por seres humanos a cada ano que levou em conta fatores como a insolação, a cobertura de nuvens, e a terra que é utilizável por seres humanos. A estimativa encontrada tem um potencial global 1,575-49,837 EJ por ano. De acordo com um estudo publicado em 2007 pelo Conselho Mundial da Energia, em 2100, 70% da energia consumida será de origem solar.</p>
+            <p>Para mais informações sobre o assunto, só clicar no link abaixo:</p>
+            <a href="https://pt.wikipedia.org/wiki/Energia_solar">https://pt.wikipedia.org/wiki/Energia_solar</a>
+      </div>
+      <div class="item">
+        <img id="FuncionamentoDePlacaSolar" src="pexels-erik-karits-2093459-10268580.jpg" width="300" height="400">
+        <img id="FuncionamentoDePlacaSolar" src="pexels-hngstrm-1865516.jpg" width="300" height="400">
+      </div>  
+    </div> 
+            <script src="MeuJava.js"></script>
+        </body>
+        
+        </html>
